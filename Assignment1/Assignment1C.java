@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Assignment3A {
+public class Assignment1C {
     public static void main(String[] args){
             double soups, rice, vegetables, peanutButter, numPeople;
             Scanner in = new Scanner(System.in);

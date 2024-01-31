@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Assignment2A {
+public class Assignment1B {
     public static void main(String[] args){
         double r1, r2, g1, g2, b1, b2, r, g, b, colorDistance;
         Scanner in = new Scanner(System.in);
