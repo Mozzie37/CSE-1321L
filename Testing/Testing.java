@@ -1,9 +1,11 @@
+import java.util.Random;
+
 public class Testing {
     public static void main(String[] args){
-        double hello = 14.75;
+        Random rand = new Random();
 
 
-        System.out.print((int)hello);
+        System.out.println(rand.nextInt(-255,255));
 
     }
 }
