@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Lab10A{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        String input;
         int num1, num2;
 
 
