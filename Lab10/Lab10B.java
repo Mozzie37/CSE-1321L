@@ -5,8 +5,9 @@ public class Lab10B {
         double width, height;
         Scanner in = new Scanner(System.in);
         char option;
+        boolean running = true;
         
-        while(true){
+        while(running){
             System.out.print("Enter width: ");
             width = in.nextDouble();
             System.out.print("Enter height: ");
@@ -15,20 +16,21 @@ public class Lab10B {
                 System.out.println("This is a valid rectangle\nThe area is " + area(width, height) + "\nThe perimeter is " + perimeter(width, height));
             }
             else{
-                System.out.println("This is an invalid rectangle.");
+                System.out.println("This is an invalid rectangle");
             }
-            System.out.print("Do you want to enter another width and height? : ");
+            System.out.print("Do you want to enter another width and height (Y/N)? : ");
             option = in.next().charAt(0);
             if(option == 'N' || option == 'n'){
-                break;
+                running = false;
             }
         }
+        System.out.println("Program Ends");
     }
     public static boolean isValid(double width, double height){
-        if (width + height <= 30){
-            return false;
+        if (width + height > 30){
+            return true;
         }
-        return true;
+        return false;
     }
     public static double area(double width, double height){
         return width * height;

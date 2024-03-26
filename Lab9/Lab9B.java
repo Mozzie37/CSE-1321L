@@ -9,7 +9,7 @@ public class Lab9B {
         boolean found = false;
 
 
-        System.out.println("Please enter 11 numebrs:");
+        System.out.println("Please enter 11 numbers:");
         for(int i = 0; i < 11; i++){
             System.out.print("Integer " + (i+1) + ": ");
             numStorage[i] = in.nextInt();
@@ -27,6 +27,7 @@ public class Lab9B {
                 }
             }
         }
+        System.out.print("The sorted set is: ");
         //printing out the sorted list
         for(int i = 0; i < 11; i++){
             System.out.print(numStorage[i] + " ");
@@ -53,10 +54,10 @@ public class Lab9B {
             else low = mid + 1;
         }
         if (found){
-            System.out.println("Target is in the set.");
+            System.out.println("The target is in the set.");
         }
         else{
-            System.out.println("Target is not in the set");
+            System.out.println("The target is not in the set.");
         }
     }
 }

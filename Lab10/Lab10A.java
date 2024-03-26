@@ -10,8 +10,8 @@ public class Lab10A{
         num1 = in.nextInt();
         System.out.print("Enter number 2: ");
         num2 = in.nextInt();
-        System.out.println("Max is " + max(num1, num2));
         System.out.println("Min is " + min(num1, num2));
+        System.out.println("Max is " + max(num1, num2));
         System.out.println("Average is " + average(num1, num2));
     }
     public static int max(int x, int y){

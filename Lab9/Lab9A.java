@@ -9,7 +9,7 @@ public class Lab9A{
 
 
 
-        System.out.println("Please enter 10 numebrs:");
+        System.out.println("Please enter 10 numbers:");
         for(int i = 0; i < 10; i++){
             System.out.print("Integer " + (i+1) + ": ");
             numStorage[i] = in.nextInt();
