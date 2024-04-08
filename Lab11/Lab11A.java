@@ -5,10 +5,10 @@ public class Lab11A{
         Scanner in = new Scanner(System.in);
         String input;
 
-        
+
         while(true){
             System.out.println("Menu\n0) Hello World\n1) Goodbye Moon\n2) Walking on sunshine");
-            System.out.print("What would you like to do?: ");
+            System.out.print("What would you like to do:");
             input = in.nextLine();
             switch(input){
                 case "0":
@@ -30,7 +30,7 @@ public class Lab11A{
                 break;
             }
         }
-
+        System.out.println("Program Ends");
 
     }
 }

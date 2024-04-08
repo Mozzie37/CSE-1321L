@@ -32,5 +32,6 @@ public class Lab11B {
         else{
             System.out.println("Invalid Password");
         }
+        System.out.println("Program Ends");
     }
 }

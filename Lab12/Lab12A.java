@@ -1,46 +1,50 @@
 import java.util.Scanner;
 
-
-
-//todo FINISH THIS 
 public class Lab12A {
-    public static void main(String[] args) {
-        int legs;
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int numOfLegs;
         boolean rolling;
         String material;
-        Scanner in = new Scanner(System.in);
 
         System.out.println("You are about to create a chair.");
         System.out.print("How many legs does your chair have: ");
-        legs = in.nextInt();
-        in.next();
-        System.out.print("Is your chair rolling (true/false) : ");
+        numOfLegs = in.nextInt();
+        in.nextLine();
+        System.out.print("Is your chair rolling (true/false): ");
         rolling = in.nextBoolean();
-        in.next();
-        System.out.println("What is your chair made of: ");
+        in.nextLine();
+        System.out.print("What is your chair made of: ");
         material = in.nextLine();
-        in.next();
-        
 
+        Chair chair = new Chair(numOfLegs, rolling, material);
 
+        System.out.print("Your chair has " + chair.numOfLegs + " legs, is ");
+        if(!chair.rolling){
+            System.out.print("not ");
+        }
+        System.out.print("rolling, and is made of " + chair.material + ".");
 
+        System.out.println("\nThis program is going to change that.");
+        chair.numOfLegs = 4;
+        chair.rolling = false;
+        chair.material = "wood";
 
-
-
+        System.out.print("Your chair has " + chair.numOfLegs + " legs, is ");
+        if(!chair.rolling){
+            System.out.print("not ");
+        }
+        System.out.print("rolling, and is made of " + chair.material + ".");
 
     }
 }
 class Chair{
-    //attributes
     public int numOfLegs;
     public boolean rolling;
     public String material;
-
-
-    //constructor
-    Chair(){
-        numOfLegs = 0;
-        rolling = false;
-        material = null;
+    Chair(int legs, boolean rolls, String madeOf){
+        numOfLegs = legs;
+        rolling = rolls;
+        material = madeOf;
     }
 }
